@@ -3,7 +3,7 @@ const db = require("quick.db");
 
 exports.run = async (bot, message, args) => {
   if(!message.content.startsWith('m!'))return;  
-  let ownerID = '268474804699398154'
+  let ownerID = 'Your ID'
   if(message.author.id !== ownerID) return;
 
   let user = message.mentions.members.first() || message.author;
